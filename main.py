@@ -7,8 +7,9 @@ from scipy.optimize import minimize
 from nnPredict import predict
 
 ## import data
-data = scipy.io.loadmat('/Users/FAVZ/PycharmProjects/untitled/ex4data1.mat')
-weights = scipy.io.loadmat('/Users/FAVZ/PycharmProjects/untitled/ex4weights.mat') #X.insert(0, 'bias', 1)
+## import your data here 
+# data = scipy.io.loadmat('/Users/FAVZ/PycharmProjects/untitled/ex4data1.mat')
+# weights = scipy.io.loadmat('/Users/FAVZ/PycharmProjects/untitled/ex4weights.mat') #X.insert(0, 'bias', 1)
 X = np.insert(data['X'], 0, 1, axis = 1)
 y = data['y']
 theta1, theta2 = weights['Theta1'], weights['Theta2']
